@@ -27,12 +27,12 @@ public class addTwoNumbers {
 
         while(p1 != null || p2!=null){
             if(p1 !=null){
-                sum +=p1.val;
+                sum +=p1.data;
                 p1=p1.next;
             }
 
             if (p2 !=null){
-                sum +=p2.val;
+                sum +=p2.data;
                 p2=p2.next;
             }
 
