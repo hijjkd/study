@@ -6,20 +6,20 @@ public class 可作为内部类demo {
      * 内部类的静态方法不能引用外部类的非静态变量。
      * 因为有两个.class文件。static在类加载的时候就有了，非静态变量需要new出来对象，所以不能引用
      */
-    class InnerClass0 {
-        public static double methoda() {
-            return d1;
-        }
-    }
+//    class InnerClass0 {
+//        public static double methoda() {
+//            return d1;
+//        }
+//    }
 
     /**
      * 原因同InnerClass0
      */
-    public class InnerClass1 {
-        static double methoda() {
-            return d1;
-        }
-    }
+//    public class InnerClass1 {
+//        static double methoda() {
+//            return d1;
+//        }
+//    }
 
     private class InnerClass2 {
         double methoda() {
@@ -33,11 +33,11 @@ public class 可作为内部类demo {
      * 但是同样不能引用外部类的非静态变量,即return d2就可以。
      * https://www.cnblogs.com/a8457013/p/8078826.html
      */
-    static class InnerClass3 {
-        protected double methoda() {
-            return d1;
-        }
-    }
+//    static class InnerClass3 {
+//        protected double methoda() {
+//            return d1;
+//        }
+//    }
 
     /**
      * 内部类可以是一个抽象类
