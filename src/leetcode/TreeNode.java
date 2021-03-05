@@ -1,7 +1,7 @@
 package leetcode;
 
 public class TreeNode {
-    int val = 0;
+    public int val = 0;
     public TreeNode left = null;
     public TreeNode right = null;
 

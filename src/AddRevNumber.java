@@ -12,7 +12,7 @@ public class AddRevNumber {
 //        Scanner in = new Scanner(System.in);
 //        int x = in.nextInt();
 //        int y = in.nextInt();
-        rev(1230);
+        rev(12301);
 
 
         Map<String, Object> businessParam = new HashMap<>();
@@ -27,12 +27,10 @@ public class AddRevNumber {
 
     }
 
-    @Test
     public static void rev(int num){
         StringBuilder sb = new StringBuilder(String.valueOf(num));
         String afterreverse = sb.reverse().toString();
         System.out.println(Integer.valueOf(afterreverse));;
-        //return num;
     }
 
 
